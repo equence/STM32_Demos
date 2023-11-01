@@ -44,13 +44,13 @@ char key_row[1]; // 声明一个长度为1的char数组
 
 //定义行的低电平输出
 #define KEY_ROW0_OUT_LOW  HAL_GPIO_WritePin(GPIOB,key_row0_Pin,GPIO_PIN_RESET)
-#define KEY_ROW1_OUT_LOW  HAL_GPIO_WritePin(GPIOB,key_row1_Pin,GPIO_PIN_RESET)
+#define KEY_ROW1_OUT_LOW  HAL_GPIO_WritePin(GPIOA,key_row1_Pin,GPIO_PIN_RESET)
 #define KEY_ROW2_OUT_LOW  HAL_GPIO_WritePin(GPIOB,key_row2_Pin,GPIO_PIN_RESET)
 #define KEY_ROW3_OUT_LOW  HAL_GPIO_WritePin(GPIOB,key_row3_Pin,GPIO_PIN_RESET)
 
 //定义行的高电平输出
 #define KEY_ROW0_OUT_HIGH  HAL_GPIO_WritePin(GPIOB,key_row0_Pin,GPIO_PIN_SET) 
-#define KEY_ROW1_OUT_HIGH  HAL_GPIO_WritePin(GPIOB,key_row1_Pin,GPIO_PIN_SET)
+#define KEY_ROW1_OUT_HIGH  HAL_GPIO_WritePin(GPIOA,key_row1_Pin,GPIO_PIN_SET)
 #define KEY_ROW2_OUT_HIGH  HAL_GPIO_WritePin(GPIOB,key_row2_Pin,GPIO_PIN_SET)
 #define KEY_ROW3_OUT_HIGH  HAL_GPIO_WritePin(GPIOB,key_row3_Pin,GPIO_PIN_SET)
 
